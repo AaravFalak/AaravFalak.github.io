@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vidit's Creative Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff512f, #dd2476);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: white;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: white;
+      color: #333;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: #f1f1f1;
+    }
+    section {
+      padding: 5rem 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+    }
+    .chess-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .chess-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hey, I'm Vidit 👋</h1>
+    <p>Welcome to my creative zone. Scroll down to see something cool about chess — my favorite game.</p>
+    <a href="#chess" class="btn">Learn About Chess</a>
+  </header>
+
+  <section class="chess-section" id="chess">
+    <h2>♟️ All About Chess</h2>
+    <p>
+      Chess is a timeless game of strategy and intellect, played on a square board divided into 64 squares.
+      It originated in India as *Chaturanga* around the 6th century and evolved into the modern version we know today.
+      Every move in chess is a decision — one that can lead to victory or defeat. Grandmasters think many steps ahead,
+      anticipating every possible response. It's not just a game, it's mental warfare. Whether you're a beginner or a pro,
+      chess sharpens your focus, memory, and decision-making skills.
+    </p>
+  </section>
+
+  <footer>
+    Designed with 💡 by Vidit
+  </footer>
+
+</body>
+</html>
